@@ -36,8 +36,8 @@ android {
     dataBinding {
         enabled = true // To enable data binding
     }
-    aaptOptions {
-        noCompress "tflite"
+    androidResources {
+        noCompress 'tflite'
     }
 }
 
