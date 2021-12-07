@@ -15,21 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaskApp">
 
-        <!-- [START fcm_default_icon] -->
-        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
-             See README(https://goo.gl/l4GJaQ) for more. -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/ic_stat_ic_notification" />
-        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
-             notification message. See README(https://goo.gl/6BKBk7) for more. -->
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
         <!-- [END fcm_default_icon] -->
         <!-- [START fcm_default_channel] -->
 
-        <activity android:name=".MainActivity2"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,13 +32,13 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".MyFirebaseMessagingService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
+<!--        <service-->
+<!--            android:name=".MyFirebaseMessagingService"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
 
     </application>
 

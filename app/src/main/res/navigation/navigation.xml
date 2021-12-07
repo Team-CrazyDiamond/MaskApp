@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.websarva.wings.android.maskapp.screens.start.StartFragment"
+        android:label="fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_detectionFragment"
+            app:destination="@id/detectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detectionFragment"
+        android:name="com.websarva.wings.android.maskapp.screens.detection.DetectionFragment"
+        android:label="fragment_detection"
+        tools:layout="@layout/fragment_detection" >
+        <argument
+            android:name="language"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+</navigation>
