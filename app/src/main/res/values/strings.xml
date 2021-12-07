@@ -4,4 +4,6 @@
     <string name="english_button">English</string>
     <string name="msg_subscribed">Subscribed to MaskCheck topic</string>
     <string name="msg_subscribe_failed">Failed to subscribe to MaskCheck topic</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

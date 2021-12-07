@@ -10,19 +10,4 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-
-    fun onJapanButtonClick(view: View){
-        val language = "Japanese"
-        val intent = Intent(this, MainActivity2::class.java)
-        intent.putExtra("language", language)
-        startActivity(intent)
-    }
-
-    fun onEnglishButtonClick(view: View){
-        val language = "english"
-        val intent = Intent(this, MainActivity2::class.java)
-        intent.putExtra("language", language)
-        startActivity(intent)
-    }
-
 }
